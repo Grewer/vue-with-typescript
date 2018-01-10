@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+//    "module": "esnext",//原es2015
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators":true,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2017",
+      "es6",
+      "dom"
+    ]
+  }
+}
