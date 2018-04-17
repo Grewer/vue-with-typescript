@@ -1,16 +1,28 @@
 {
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "compilerOptions": {
-    "strict": true,
-//    "module": "esnext",//原es2015
-    "module": "es2015",
-    "moduleResolution": "node",
-    "experimentalDecorators":true,
-    "target": "es5",
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    //    "jsx": "preserve",
+    "strictFunctionTypes": false,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "isolatedModules": false,
     "lib": [
-      "es2017",
+      "dom",
+      "es5",
       "es6",
-      "dom"
-    ]
+      "es7",
+      "es2015.promise"
+    ],
+    "sourceMap": true,
+    "pretty": true
   }
 }
