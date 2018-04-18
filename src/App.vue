@@ -22,6 +22,12 @@
     show():void{
       this.$message.info('这是一条消息提示')
     }
+
+    created(){
+      this.$get('/testUrl').then(data=>{
+        console.log('s')
+      })
+    }
   }
 </script>
 

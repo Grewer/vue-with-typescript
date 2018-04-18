@@ -4,11 +4,9 @@
   </div>
 </template>
 <script lang="ts">
-  import Vue from 'vue';
-  import Component from 'vue-class-component'
-  @Component({
+  import {Component, Vue} from 'vue-property-decorator'
 
-  })
+  @Component
   export default class Hello extends Vue {
     helloMsg = 'hello,grewer';
   }
