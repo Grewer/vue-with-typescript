@@ -1,6 +1,28 @@
-# tstest
+# vue-with-typescript
 
-> A Vue.js project
+> A Vue.js with typescript started project
+
+
+## dependencies
+
+```json
+{
+    "@types/node": "^9.6.5",
+    "axios": "^0.18.0",
+    "element-ui": "^2.0.7",
+    "typescript": "^2.6.2",
+    "vue": "^2.5.2",
+    "vue-class-component": "^6.1.2",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.0",
+    "ts-loader": "^3.2.0"
+}
+```
+
+
+
 
 ## Build Setup
 
