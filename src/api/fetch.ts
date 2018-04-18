@@ -45,7 +45,7 @@ export default class fetch {
     })
   }
 
-  $post(url: string, params?: object): Promise<any>  {
+  $post(url: string, params?: object): Promise<any> {
     return new Promise((resolve, reject) => {
       axios.post(url, params)
         .then(function (response) {
