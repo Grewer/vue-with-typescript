@@ -2,11 +2,11 @@
   <div>
     <div>{{msg}}</div>
     <input type="text" v-model="childMsg">
-    <button @click="submit">submit</button>
+    <button @click="submit(childMsg)">submit</button>
   </div>
 </template>
 <script lang="ts">
-  import {Component, Prop, Vue} from 'vue-property-decorator'
+  import {Component, Emit, Prop, Vue} from 'vue-property-decorator'
 
   @Component
   export default class Pager extends Vue {
@@ -15,8 +15,8 @@
     @Prop()
     msg: string
 
-    submit(): void {
-      this.$emit('get', this.childMsg);
-    }
+
+    @Emit('get')
+    submit() {}
   }
 </script>
