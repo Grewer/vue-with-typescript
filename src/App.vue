@@ -1,11 +1,9 @@
-<template>
-  <div id="app">
-    <router-view></router-view>
-    <el-button-group>
-      <el-button @click="href">跳转页面</el-button>
-      <el-button @click="show">显示 toast</el-button>
-    </el-button-group>
-  </div>
+<template lang="pug">
+    div.testClass
+      router-view
+      el-button-group
+        el-button(@click="href") 跳转页面
+        el-button(@click="show") 显示toast
 </template>
 
 <script lang="ts">
@@ -39,5 +37,8 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+  .testClass{
+    text-align: center;
   }
 </style>

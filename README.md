@@ -17,7 +17,11 @@
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "vuex-class": "^0.3.0",
-    "ts-loader": "^3.2.0"
+    "ts-loader": "^3.2.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "pug-filters": "^3.1.0",
+    "pug-loader": "^2.4.0"
 }
 ```
 

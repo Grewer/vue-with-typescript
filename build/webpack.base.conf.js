@@ -66,6 +66,14 @@ module.exports = {
         }
       },
       {
+        test: /\.jade$/,
+        loader: "jade"
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug'
+      },
+      {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: [

@@ -1,11 +1,10 @@
-<template>
-  <div>
-    <Pager :msg="msg" @get="appGet"></Pager>
-    测试:
-    <div style="margin: 5px;">
-      <div>子组件传过来的值:{{rev}};</div>
-    </div>
-  </div>
+<template lang="pug">
+  div
+    Pager(:msg="msg" @get="appGet")
+    div(style="margin: 5px;")
+      div 子组件传过来的值:{{rev}}
+    ul
+      li(v-for="(item,index) in arr" :key="index") {{item}}
 </template>
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator'
@@ -20,13 +19,14 @@
   export default class AppTwo extends Vue {
     msg = "i'm main App component";
     rev?: string = '';
+    arr: string[] = []
 
     appGet(val: string): void {
       this.rev = val;
+      this.arr.push(val)
     }
 
-    beforeRouteEnter(to, from, next){
-      console.log(from)
+    beforeRouteEnter(to, from, next) {
       next()
     }
 
